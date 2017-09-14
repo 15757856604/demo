@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input">
+
+<div class="clickBox">11111</div>
+<div class="clickBox">22222</div>
+<div class="clickBox">33333</div>
+<div class="clickBox">44444</div>
+
+<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+<script>
+    const str = '*******************';
+
+    var funcs = [];
+    var funcs2 = [];
+
+    //var关键字声明变量。无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部)，最终输出10个10
+    /*for (var i = 0; i < 10; i++) {
+     funcs.push(function () {
+     console.log(i)
+     })
+     }*/
+    //上面的for循环相当于
+    var i;
+    for (i = 0; i < 10; i++) {
+        funcs.push(function () {
+            console.log(i)
+        })
+    }
+    //此时i=10;
+    funcs.forEach(function (func) {
+        func();
+    });
+
+    //let作用域是在它所在当前代码块，所以最终输出0-9
+    for (let i = 0; i < 10; i++) {
+        funcs2.push(function () {
+            console.log(i)
+        })
+    }
+    funcs2.forEach(function (func) {
+        func();
+    });
+
+    $("#input").onkeyup = function () {
+        alert(1);
+    };
+    var input = document.getElementById('input');
+    input.onkeyup = function () {
+        alert(2);
+    };
+
+
+    function clickBox(i) {
+        var onclick = function (e) {
+            console.log(i);
+        };
+        return onclick;
+    }
+    var clickBoxs = document.querySelectorAll('.clickBox');
+    for (var i = 0; i < clickBoxs.length; i++) {
+        clickBoxs[i].onclick = clickBox(i);
+    }
+
+    function sum(num1, num2) {
+        return num1 + num2;
+    }
+
+    function callSum1(num1, num2) {
+        return sum.apply(this, arguments);
+    }
+    function callSum2(num1, num2) {
+        return sum.apply(this, [num1, num2]);
+    }
+    console.log(callSum1(10, 10));
+    console.log(callSum2(10, 10));
+    console.log(str);
+
+
+    var numberObject = new Number(10);
+
+    var num = 10;
+    console.log(num.toString());
+    console.log(num.toString(2));
+    console.log(num.toString(8));
+    console.log(num.toString(10));
+    console.log(num.toString(16));
+    console.log(str);
+
+    var a = '1';
+    var b = '1';
+    var c = {"aaa":a===b};
+    console.log(c);
+
+    var array1 = [1,2,3,4,5,6];
+    function run(){
+        for(let i = 0 ;i<array1.length;i++){
+            console.log(i);
+//            return i;
+        }
+    }
+    run();
+
+</script>
+</body>
+</html>

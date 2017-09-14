@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .tab{
+            background: #F2F2F2;
+            width: 64px;
+            border-right: 1px solid #CDCDCD;
+            height: 100%;
+            float: left;
+        }
+        .tab-li{
+            width: 64px;
+            height: 64px;
+            list-style: none;
+            border-bottom: 1px solid #CDCDCD;
+            color: #212121;
+            cursor: pointer;
+            text-align: center;
+            line-height: 64px;
+        }
+        .tab-li.selected{
+            background: #fff;
+            border-right: 1px solid #fff;
+        }
+        .content{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul class="tab">
+        <li class="tab-li selected">测试1</li>
+        <li class="tab-li">测试2</li>
+        <li class="tab-li">测试3</li>
+    </ul>
+    <div class="content">
+        <div class="tab-content">111</div>
+        <div class="tab-content" style="display: none;">222</div>
+        <div class="tab-content" style="display: none;">333</div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+    var height = document.documentElement.clientHeight;
+    console.log(height);
+    document.getElementById('box').style.height = height+'px';
+    var index;
+    $('.tab-li').on('click',function () {
+        index = $(this).index();
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $('.tab-content').hide().eq(index).show();
+    });
+</script>
+</body>
+</html>

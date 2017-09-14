@@ -1,0 +1,29 @@
+{
+    "total": 2,
+    "resultList": [
+        {
+            "title": "资源名称",
+            "content": "该文件资源的内容里没有搜索到和关键字匹配的内容",
+            "keyword": "关键字1，关键字2，关键字3",
+            "filename": "大学<font color='red'>物理</font>.docx",
+            "id": "",
+            "filetype": "docx",
+            "type": "2",
+            "status": "1",
+            "busitype": "",
+            "fileId": "402880e65e5730d7015e57a8da330001"
+        },
+        {
+            "title": "资源名称",
+            "content": "\n<font color='red'>物理</font>层：最低层、<font color='red'>物理</font>连接通信主机、单元比特\n数据链路层：通过建立数据链路连接，差错控制和流量",
+            "keyword": "关键字1，关键字2",
+            "filename": "计算机网络.docx",
+            "id": "",
+            "filetype": "docx",
+            "type": "2",
+            "status": "1",
+            "busitype": "",
+            "fileId": "402880e65e5730d7015e57a92bf20002"
+        }
+    ]
+}

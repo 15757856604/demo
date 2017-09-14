@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标点击水波效果</title>
+
+	<style type="text/css">
+		.btn{
+			width: 200px;
+			height: 40px;
+			background-color: #228ae6;
+			outline: none;
+			border: none;
+			font-size: 16px;
+			color: #fff;
+			font-family: 'Microsoft YaHei';
+		}
+		.btn_white .ripple{
+			background-color: rgba(255,255,255,0.2);
+		}
+		.ripple_effect{
+			position: relative;
+			overflow: hidden;
+		}
+		.ripple{
+			position: absolute;
+			border-radius: 50%;
+			background: rgba(0,0,0,0.2);
+			transform: scale(0);
+			opacity: 1;
+		}
+		.rippleEffect{
+			animation: rippleEffect 2s cubic-bezier(0.23,1,0.32,1);
+		}
+		@keyframes rippleEffect{
+			100%{
+				transform: scale(2);
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<button class="btn ripple_effect">点击水波</button>
+	<button class="btn btn_white ripple_effect">点击水波</button>
+
+	<script type="text/javascript">
+		function ripple(event,$this) {
+			event = event || window.event;
+			//获取鼠标位置
+			var x = event.pageX || document.documentElement.scrollLeft + document.body.scrollLeft + event.clientX;
+			var y = event.pageY || document.documentElement.scrollTop + document.body.scrollTop + event.clientY;
+			var wx = $this.offsetWidth;
+			x = x - $this.offsetLeft - wx/2;
+			y = y - $this.offsetTop - wx/2;
+			//添加.ripple
+			var ripple = document.createElement('span');
+			ripple.className = 'ripple';
+			var firstChild = $this.firstChild;
+			if(firstChild) {
+				$this.insertBefore(ripple,firstChild);
+			} else {
+				$this.appenChild(ripple);
+			};
+			ripple.style.cssText = 'width:' + wx + 'px;height:' + wx + 'px;top:' + 0 + 'px;left:' + 0 + 'px';
+			ripple.classList.add('rippleEffect');
+			//动画结束，删除波纹元素
+			ripple.addEventListener('animationend',function(ripple){
+				// $this.removeChild(this);
+			})
+		}
+
+		var btn = document.querySelectorAll('.ripple_effect');
+		for(var i=0;i<btn.length;i++){
+			btn[i].addEventListener('click',function(e){
+				ripple(e,this);
+			});
+		}
+	</script>
+</body>
+</html>

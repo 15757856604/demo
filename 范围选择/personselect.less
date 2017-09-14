@@ -1,0 +1,235 @@
+@import "color";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.person-background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 999;
+}
+
+.person-box {
+    * {
+        box-sizing: content-box;
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+    width: 528px;
+    height: 624px;
+    border: 1px solid @black_300;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -312px;
+    margin-left: -384px;
+    //头部
+    .person-top {
+        height: 47px;
+        line-height: 48px;
+        font-size: 16px;
+        padding: 0 16px;
+        color: @black_900;
+        background: @white;
+        border-bottom: 1px solid @black_300;
+        .close {
+            float: right;
+            cursor: pointer;
+            display: block;
+            width: 16px;
+            height: 16px;
+            font-family: 'Material-Design-Iconic-Font';
+        }
+        .help {
+            float: right;
+            cursor: help;
+            display: block;
+            width: 16px;
+            height: 16px;
+            font-family: 'Material-Design-Iconic-Font';
+            margin-right: 8px;
+        }
+    }
+    //主体
+    .person-main {
+        height: 504px;
+        padding-top: 8px;
+        .tabs {
+            height: 32px;
+            margin: 0 0 8px 16px;
+            .tab {
+                display: inline-block;
+                margin-right: 8px;
+                width: 80px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                background: @black_300;
+                color: @black_900;
+                font-size: 12px;
+                cursor: pointer;
+                &.selected {
+                    background: @blue_500;
+                    color: @white;
+                }
+            }
+        }
+        //待选人员
+        .person-selects {
+            height: 488px;
+            width: 496px;
+            margin: 0 auto;
+            //内容头部
+            .header {
+                background: @black_100;
+                border-bottom: 1px solid @black_300;
+                height: 31px;
+                line-height: 32px;
+                font-size: 12px;
+                color: @black_900;
+                padding: 0 8px 0 12px;
+            }
+            //左侧
+            .person-selects-left {
+                float: left;
+                width: 216px;
+                height: 440px;
+                border: 1px solid @black_300;
+                .person-selects-pinyin {
+                    position: relative;
+                    height: 408px;
+                    width: 214px;
+                    float: left;
+                    //搜索框
+                    .search {
+                        box-sizing: border-box;
+                        background: @white;
+                        border: 1px solid @black_300;
+                        border-radius: 2px;
+                        outline: none;
+                        width: 208px;
+                        height: 24px;
+                        margin: 4px;
+                        padding-right: 18px;
+                    }
+                    .search-icon {
+                        font-family: 'Material-Design-Iconic-Font';
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        font-size: 14px;
+                        position: absolute;
+                        right: 6px;
+                        top: 9px;
+                        color: @black_500;
+                    }
+                    .selects-list-box {
+                        height: 376px;
+                        overflow: hidden;
+                        .one-person {
+                            height: 40px;
+                            line-height: 40px;
+                            padding-left: 24px;
+                            cursor: pointer;
+                            color: @black_900;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            //中间按钮
+            .btn-box {
+                width: 40px;
+                height: 486px;
+                float: left;
+                margin-left: 8px;
+                position: relative;
+                .btn-ul {
+                    position: absolute;
+                    height: 200px;
+                    width: 40px;
+                    top: 50%;
+                    margin-top: -100px;
+                    .btn-li {
+                        display: block;
+                        cursor: pointer;
+                        width: 38px;
+                        height: 26px;
+                        background: @white;
+                        border: 1px solid @black_400;
+                        border-radius: 2px;
+                        line-height: 26px;
+                        text-align: center;
+                        font-size: 16px;
+                        color: @black_700;
+                        letter-spacing: -2px;
+                        &:hover {
+                            border: 1px solid @blue_500;
+                            color: @blue_500;
+                        }
+                    }
+                    #addAll {
+                        margin-top: 16px;
+                    }
+                    #remove {
+                        margin-top: 32px;
+                    }
+                    #removeAll {
+                        margin-top: 16px;
+                    }
+                }
+            }
+            //右侧
+            .person-selects-right {
+                float: left;
+                margin-left: 8px;
+                width: 216px;
+                height: 440px;
+                border: 1px solid @black_300;
+                .person-selected {
+                    height: 408px;
+                    overflow: hidden;
+                    .one-selected-person {
+                        height: 40px;
+                        line-height: 40px;
+                        padding-left: 24px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        color: @black_900;
+                    }
+                }
+            }
+            //多选列表
+            .selects-list {
+                li.ui-selecting {
+                    background: #FECA40;
+                }
+                li.ui-selected {
+                    background: #F39814;
+                    color: white;
+                }
+            }
+        }
+    }
+    //底部
+    .person-bottom {
+        height: 55px;
+        border-top: 1px solid @black_300;
+        line-height: 56px;
+        text-align: center;
+        .ui-button {
+            margin-right: 4px;
+        }
+    }
+}

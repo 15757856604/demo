@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="personselect.css">
+</head>
+<body>
+<div class="person-background">
+    <div class="person-box">
+        <div class="person-top">
+            <span>范围选择</span>
+            <span class="close zmdi-close"></span>
+            <!--<span class="help zmdi-help" title="1.鼠标双击快捷选择人员或取消选择人员&#10;2.鼠标拖动可多选&#10;3.按住Ctrl（MAC下按住Alt）+鼠标单击可多选"></span>-->
+        </div>
+        <div class="person-main">
+            <ul class="tabs">
+                <li class="tab selected">区域</li>
+                <li class="tab">流域</li>
+                <li class="tab">控制单元</li>
+            </ul>
+            <div class="person-selects">
+                <div class="person-selects-left">
+                    <div class="header">
+                        候选范围
+                    </div>
+                    <div class="person-selects-pinyin">
+
+                        <input class="search" id="staffName"/>
+                        <span class="search-icon zmdi-search"></span>
+
+                        <div class="selects-list-box">
+                            <ul id="selects-person" class="selects-list">
+                                <li class="one-person">
+                                    张三
+                                </li>
+                                <li class="one-person">
+                                    张三
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <ul class="btn-ul">
+                        <li class="btn-li" id="add">></li>
+                        <li class="btn-li" id="addAll">>></li>
+                        <li class="btn-li" id="remove"><</li>
+                        <li class="btn-li" id="removeAll"><<</li>
+                    </ul>
+                </div>
+                <div class="person-selects-right">
+                    <div class="header">
+                        已选范围
+                    </div>
+                    <div class="person-selected">
+                        <ul id="selected-person" class="selects-list">
+                            <li class="one-selected-person">
+                                张三
+                            </li>
+                            <li class="one-selected-person">
+                                张三
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fn-clear"></div>
+            </div>
+        </div>
+        <div class="person-bottom">
+            <a id="okFun" class="ui-button ui-button-blue">确定</a>
+            <a id="cancel" class="ui-button ui-button-default">取消</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

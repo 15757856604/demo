@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="chosen.css">
+</head>
+<body>
+	<div class="box">
+		<a id="add" href="javascript:void(0);">新增</a>
+		<ul id="e_ul">
+			<li>
+				<select name="" id="select1" class="select_demo" style="width: 300px;">
+					<option value="1">1</option>
+					<option value="1">1</option>
+					<option value="1">1</option>
+				</select>
+				<input type="text" name="NO" value="1">
+				<input type="button" name="del" value="删除" onclick="del(this);">
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="chosen.jquery.js"></script>
+	<script type="text/javascript">
+		$(".select_demo").chosen();
+		$("#select1").append("<option value='2'>2</option>");
+		$("#select1").trigger("chosen:updated");
+
+		$(function () {
+			var show_count = 20;   //要显示的条数
+			$("#add").bind('click',function () {
+				var length = $("#e_ul li").length;
+				if (length < show_count)    //点击时候，如果当前的数字小于递增结束的条件
+				{
+					//要添加的内容
+					var content = '<li><select name="" class="select_demo" style="width: 300px;"><option value="1">1</option><option value="1">1</option><option value="1">1</option></select><input type="text" name="NO" value="1"><input type="button" name="del" value="删除" onclick="del(this);"></li>'
+					$(content).appendTo("#e_ul");   //在后面添加一行
+					changeIndex();//更新行号
+					$(".select_demo").chosen();
+				}
+			});
+		});
+		function changeIndex() {
+			var i = 1;
+			$("#e_ul li").each(function () {
+				$(this).find("input[name='NO']").val(i++);//更新行号
+			});
+		}
+
+		function del(opp) {
+			var length = $("#e_ul li").length;
+			if (length <= 1) {
+				alert("至少保留一行");
+			} else {
+				$(opp).parent().remove();//移除当前行
+				changeIndex();
+			}
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            position: relative;
+            font-size: 0;
+        }
+
+        .box {
+            padding: 15px 0 0 15px;
+            display: inline-block;
+        }
+
+        .pic {
+            padding: 10px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .pic img {
+            width: 260px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/1.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/2.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/3.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/4.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/5.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/6.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/7.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/8.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/9.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/10.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/1.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/2.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/3.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/4.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/5.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/6.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/7.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/8.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/9.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="" data-src="images/10.jpg">
+        </div>
+    </div>
+
+</div>
+
+<!--<script type="text/javascript">
+    var dataInt = {"data": [{"src": '1.jpg'}, {"src": '2.jpg'}, {"src": '3.jpg'}, {"src": '4.jpg'}, {"src": '5.jpg'}]};
+
+    window.onload = function () {
+        waterfall('main', 'box');
+
+        scroll();
+        //滚动添加
+        window.onscroll = function () {
+            scroll();
+        }
+    };
+
+    function scroll() {
+        if (checkScrollSlide()) {
+            var oParent = document.getElementById('main');
+            //将数据库渲染到当前页面的尾部
+            for (var i = 0; i < dataInt.data.length; i++) {
+                var oBox = document.createElement('div');
+                oBox.className = 'box';
+                oParent.appendChild(oBox);
+                var oPic = document.createElement('div');
+                oPic.className = 'pic';
+                oBox.appendChild(oPic);
+                var oImg = document.createElement('img');
+                oImg.src = "images/" + dataInt.data[i].src;
+                oPic.appendChild(oImg);
+            }
+            waterfall('main', 'box');
+        }
+    }
+    function waterfall(parent, box) {
+        //将main下的所有class为box的元素取出来
+        var oParent = document.getElementById(parent);
+        var oBoxs = getByClass(oParent, box);
+        //计算整个页面的显示雷氏（页面/box的宽）
+        var oBoxW = oBoxs[0].offsetWidth;
+        var cols = Math.floor(document.documentElement.clientWidth / oBoxW);
+        //console.log(cols);
+        //设置main的宽
+        oParent.style.cssText = 'width:' + oBoxW * cols + 'px;margin:0 auto';
+        var hArr = [];//存放每一列高度
+        for (var i = 0; i < oBoxs.length; i++) {
+            if (i < cols) {
+                hArr.push(oBoxs[i].offsetHeight);
+            }
+            else {
+                var minH = Math.min.apply(null, hArr);
+                var index = getMinhIndex(hArr, minH);
+                oBoxs[i].style.position = "absolute";
+                oBoxs[i].style.top = minH + 'px';
+                oBoxs[i].style.left = oBoxW * index + 'px';
+                hArr[index] += oBoxs[i].offsetHeight;
+            }
+        }
+    }
+
+    //根据Class获取元素
+    function getByClass(parent, clsName) {
+        var boxArr = new Array(),//用来存储获取到的所有class为Box的元素
+            oElements = parent.getElementsByTagName('*');
+        for (var i = 0; i < oElements.length; i++) {
+            if (oElements[i].className == clsName) {
+                boxArr.push(oElements[i]);
+            }
+        }
+        return boxArr;
+    }
+    function getMinhIndex(arr, val) {
+        for (var i in arr) {
+            if (arr[i] == val) {
+                return i;
+            }
+        }
+
+    }
+
+    //检测是否具备了滚动条件
+    function checkScrollSlide() {
+        var oParent = document.getElementById('main');
+        var oBoxs = getByClass(oParent, 'box');
+        var lastBoxH = oBoxs[oBoxs.length - 1].offsetTop + Math.floor(oBoxs[oBoxs.length - 1].offsetHeight / 2);
+        var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.body.clientHeight || document.documentElement.clientHeight;
+        return (lastBoxH < scrollTop + height) ? true : false;
+    }
+</script>-->
+
+<script>
+    var data = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg'];
+
+    function isScroll() {
+        var docHeight = document.body.offsetHeight;
+        var windowHeight = window.innerHeight;
+        var scrollTop = document.body.scrollTop;
+
+        var idbox = document.getElementById('main');
+        var boxs = document.getElementsByClassName('box');
+        var lastTop = boxs[boxs.length - 1].offsetTop;
+        var lastHeight = boxs[boxs.length - 1].offsetHeight;
+        if ((scrollTop + windowHeight) > (lastTop + lastHeight / 2)) {
+            console.log('加载图片');
+            for (var i = 0; i < data.length - 1; i++) {
+                var box_div = document.createElement('div');
+                var pic_div = document.createElement('div');
+                var _img = document.createElement('img');
+                box_div.className = 'box';
+                pic_div.className = 'pic';
+                _img.src = 'images/' + data[i];
+                pic_div.appendChild(_img);
+                box_div.appendChild(pic_div);
+                idbox.appendChild(box_div);
+            }
+        }
+    }
+
+    window.onload = function () {
+        isScroll();
+    };
+
+    window.onscroll = function () {
+        isScroll();
+    }
+
+</script>
+
+</body>
+</html>

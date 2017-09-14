@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    会议名称
+    <input type="text">
+</div>
+<div>
+    会议发起人
+    <input type="text">
+</div>
+<div>
+    会议重要性
+    <select>
+        <option>111</option>
+        <option>222</option>
+        <option>333</option>
+    </select>
+</div>
+<div>
+    会议发起科室
+    <input type="text">
+</div>
+<div>
+    会议室地点
+    <input id="room" type="text" readonly>
+</div>
+<div>
+    会议开始时间
+    <input class="Wdate" type="text" id="date_start"
+           onfocus="WdatePicker({onpicked:function(){date_end.focus();},minDate:'9:00',maxDate:'#F{$dp.$D(\'date_end\')||\'17:00\'}',dateFmt:'H:00',disabledDates:[12]})"/>
+</div>
+<div>
+    会议结束时间
+    <input class="Wdate" type="text" id="date_end"
+           onfocus="WdatePicker({minDate:'#F{$dp.$D(\'date_start\')||\'10:00\'}',maxDate:'18:00',dateFmt:'H:00',disabledDates:[13]})"/>
+</div>
+<div>
+    会议出席人员
+    <textarea rows="6" cols="40">张三&#13;&#10;李四</textarea>
+</div>
+
+<script src="../jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+<script>
+    var data = {};
+    var dialog = top.dialog.get(window);
+    var room = dialog.data;
+    $("#room").val(room);
+    function getval() {
+        data.date_start = $('#date_start').val();
+        data.date_end = $('#date_end').val();
+        data.name = $('textarea').val();
+        dialog.returnValue = data;
+    }
+    setInterval(getval,200);
+
+</script>
+
+</body>
+</html>

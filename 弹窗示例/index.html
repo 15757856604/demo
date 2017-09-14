@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="lib/table/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="lib/dialog/ui-dialog.css">
+</head>
+<body>
+
+
+请选择时间：
+<input class="Wdate" type="text" id="date" onfocus="WdatePicker({onpicked:changeval})"/>
+<table class="table-demo" cellspacing="0" cellpadding="0" style="margin-top: 8px;">
+    <thead>
+        <tr>
+            <th id="datetime" colspan="10"></th>
+        </tr>
+        <tr>
+            <th>会议室名称</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>13:00-14:00</th>
+            <th>14:00-15:00</th>
+            <th>15:00-16:00</th>
+            <th>16:00-17:00</th>
+            <th>17:00-18:00</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>会议室A可容纳10人</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a class="reserve" href="javascript:void(0);">预定</a></td>
+    </tr>
+    <tr>
+        <td>会议室B可容纳15人</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a class="reserve" href="javascript:void(0);">预定</a></td>
+    </tr>
+    <tr>
+        <td>会议室C可容纳8人</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a class="reserve" href="javascript:void(0);">预定</a></td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="lib/table/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/dialog/dialog-plus.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    function changeval() {
+        $("#datetime").html($('#date').val());
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .selcet{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #ccc;
+            font-size: 16px;
+            position: relative;
+            cursor: pointer;
+            padding-left: 8px;
+        }
+        .selcet:after{
+            content: '';
+            display: block;
+            border-top: 8px solid #ccc;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            position: absolute;
+            top: 22px;
+            right: 32px;
+        }
+        .select-text{
+            float: right;
+            margin-right: 64px;
+        }
+
+        .selcet-ul{
+            display: none;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        }
+        .selcet-li{
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+            list-style: none;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            cursor: pointer;
+        }
+        .selcet-li.selected:after{
+            content: '\f26b';
+            font-family: 'Material-Design-Iconic-Font';
+            font-weight: 600;
+            color: #03a9f4;
+            position: absolute;
+            right: 30%;
+        }
+        .selcet-li:last-child{
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+<div class="selcet">
+    <span class="text">环评项目</span>
+    <span class="select-text"></span>
+</div>
+<ul class="selcet-ul">
+    <li class="selcet-li">ceshiceshi</li>
+    <li class="selcet-li">ceshiceshiceshiceshi</li>
+</ul>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+    $('.selcet').on('click',function (e) {
+        e.stopPropagation();
+        $('.selcet-ul').slideToggle();
+    });
+    $('.selcet-ul .selcet-li').on('click',function (e) {
+        e.stopPropagation();
+        var text = $(this).html();
+        $('.select-text').html(text);
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $('.selcet-ul').slideToggle();
+    });
+    $(document).on('click',function (e) {
+        $('.selcet-ul').slideToggle();
+    });
+</script>
+</body>
+</html>

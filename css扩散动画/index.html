@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>css3动画</title>
+<style>
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-size:14px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+	background:#eee;
+}
+.grid{
+	width:320px;
+	margin:auto;
+}
+.star{
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-20px;
+	margin-top:-20px;
+	-webkit-transform:scale(0);
+	-webkit-animation-name:janim;
+	-webkit-animation-duration:5.3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-direction:normal;
+	-webkit-animation-fill-mode:forwards;
+}
+.star s{
+	width:40px;
+	height:40px;
+	display:block;
+	border-radius:20px;
+	background-color:#ff2f51;
+	position:absolute;
+}
+.star b{
+	width:40px;
+	height:40px;
+	display:block;
+	border-radius:20px;
+	position:absolute;
+	background-color:#f35;
+	-webkit-transform:scale(2);
+	opacity:.2;
+	-webkit-animation:zdjpop 5.8s infinite;
+}
+@-webkit-keyframes janim {
+0% {
+	-webkit-transform:scale(0.2);
+}
+50% {
+	-webkit-transform:scale(1.2);
+}
+100% {
+	-webkit-transform:scale(1);
+}
+}
+@-webkit-keyframes zdjpop {
+0% {
+	opacity:1;
+	-webkit-transform:scale(1);
+}
+100% {
+	opacity:0;
+	-webkit-transform:scale(4.5);
+}
+}
+</style>
+</head>
+<body>
+<div class="grid">
+  <!--发光-->
+  <div class="star">
+    <s></s>
+    <b></b>
+  </div>
+  <!--//发光-->
+</div>
+<script>
+</script>
+</body>
+</html>

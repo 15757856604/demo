@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: PingFangSC-Regular;
+}
+
+.fn-clear {
+    clear: both;
+}
+
+.box {
+    width: 1008px;
+    margin: 40px auto;
+}
+
+.form {
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    border-bottom: 0;
+    border-right: 0;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.form-item {
+    border-bottom: 1px solid #BDBDBD;
+    float: left;
+    position: relative;
+}
+
+.form-item-title {
+    width: 215px;
+    height: 39px;
+    border-right: 1px solid #BDBDBD;
+    background: #F5F5F5;
+    float: left;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #424242;
+}
+
+.form-item-content {
+    width: 287px;
+    height: 39px;
+    border-right: 1px solid #BDBDBD;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #424242;
+}
+
+.form-left {
+    width: 63px;
+    border-right: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+    background: #F5F5F5;
+    font-size: 14px;
+    color: #424242;
+    position: absolute;
+    height: calc(100% - 1px);
+    text-align: center;
+}
+.form-left-text{
+    display: inline-block;
+    padding: 0 24px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -55px;
+}
+
+.form-right {
+    width: 944px;
+    margin-left: 64px;
+    position: relative;
+}
+
+.form-item-title-swidth {
+    width: 151px;
+}
+
+.form-item-content-lwidth {
+    width: 791px;
+}
+
+.tip-text {
+    font-size: 12px;
+    color: #717E8B;
+    float: right;
+    margin-right: 8px;
+}
+
+.form-item-height-title{
+    width: 151px;
+    background: #F5F5F5;
+    border-right: 1px solid #BDBDBD;
+    font-size: 14px;
+    color: #424242;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
+.form-item-height-title-text{
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -7px;
+    margin-left: -27px;
+}
+
+.form-item-height-content{
+    border-right: 1px solid #BDBDBD;
+    float: left;
+}
+.form-item-height{
+    padding-left: 152px;
+}
+
+.form-item-content-1-6 {
+    width: 131px;
+}
+.form-item-content-1-3{
+    width: 263px;
+}
+.form-item-content-1-4{
+    width: 197px;
+}
+.form-item-height-content-top{
+    height: 39px;
+    border-bottom: 1px solid #BDBDBD;
+    background: #F5F5F5;
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+    line-height: 40px;
+}
+.form-item-height-content-content{
+    height: 40px;
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+    line-height: 40px;
+}
+.form-item-height-box{
+    width: 792px;
+}
+.form-item-height-box-title{
+    height: 40px;
+}
+.form-item-height-box-title-text{
+    height: 40px;
+    background: #F5F5F5;
+    border-right: 1px solid #BDBDBD;
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+}
+.form-item-height-box-content{
+    height: 40px;
+}
+.form-item-height-box-content-text{
+    border-right: 1px solid #BDBDBD;
+    border-top: 1px solid #BDBDBD;
+    height: 39px;
+    float: left;
+}
+.icon-group{
+    height: 39px;
+    line-height: 40px;
+    border-top: 1px solid #BDBDBD;
+    border-right: 1px solid #BDBDBD;
+    text-align: center;
+}
+.icon-group .add{
+    cursor: pointer;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("add.png") no-repeat center / contain;
+    vertical-align: middle;
+}
+.icon-group .icon-text{
+    font-size: 14px;
+    color: #424242;
+}
+
+.icon-group .icon-text.del{
+    color: #ff0000;
+    cursor: pointer;
+    margin-left: 8px;
+    /*display: none;*/
+}

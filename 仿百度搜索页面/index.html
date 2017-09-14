@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>搜索</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="search-box" id="search-box">
+    <h1 class="title">搜&nbsp;&nbsp;&nbsp;&nbsp;索</h1>
+    <input class="inp" type="text"/>
+    <span class="icon search-icon"></span>
+</div>
+
+<div class="after-search" id="after-search">
+    <div class="fixed-top">
+        <div class="title">
+            <span class="text">资料查询</span>
+            <input class="inp" type="text"/>
+            <span class="icon search-icon"></span>
+        </div>
+        <div class="condition">
+            <ul class="condition-items">
+                <li class="condition-item select">全部</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="extend">
+            <div id="extend">
+                <div class="extend-default">
+                    <span class="text">为您搜索到相关结果约<span id="result-num"></span>个</span>
+                    <span id="open-extend" class="right">搜索工具</span>
+                </div>
+                <div class="extend-open">
+                    <span class="text"></span>
+                    <span id="close-extend" class="right">收起工具</span>
+                </div>
+            </div>
+        </div>
+        <ul id="items" class="items clearfix">
+            <!--<li class="item">
+                <a class="item-title" href="javascript:void(0);" title="">资源名称</a>
+                <p class="item-content" title="">东江时报讯 今年9月1日起，深圳全市东江时报讯 今年9月1日起，深圳全市东江时报讯 今年9月1日起，深圳全市范围内早晚高峰对外地号牌车辆进行全面限行，违反限行规定的车辆，将按照冲禁令给予300元处罚，并记3分。不仅如此，东时记者昨日从深圳市交警官微获悉，深圳交警部门针对临时号牌管理发出最新通告，外地临牌车首次违反深圳限行令也要进行处罚，将于9月11日起正式执法，最高处罚1万元。</p>
+                <a class="item-filename" href="javascript:void(0);" title="">文件名称</a>
+                <p class="item-keyword">关键字</p>
+            </li>-->
+        </ul>
+    </div>
+</div>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="clamp.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

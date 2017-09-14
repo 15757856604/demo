@@ -1,0 +1,28 @@
+.table-demo{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table-demo th,
+.table-demo td{
+    font-weight: normal;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 8px 4px;
+    text-align: center;
+}
+
+.table-demo th{
+    background: #E4E4E4;
+    white-space: nowrap;
+}
+
+.table-demo td.hasmeeting{
+    background: #99FFFF;
+}
+
+.table-demo .reserve{
+    text-decoration: none;
+    color: #000;
+}
