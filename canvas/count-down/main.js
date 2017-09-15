@@ -6,9 +6,9 @@ const color = ['#ced4da', '#ff8787', '#f783ac', '#da77f2', '#9775fa', '#748ffc',
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-const WIDTH = canvas.width = 1024;
-const HEIGHT = canvas.height = 728;
-const r = 8;
+const WIDTH = canvas.width = document.documentElement.clientWidth;
+const HEIGHT = canvas.height = document.documentElement.clientHeight;
+const r = WIDTH / 128;
 let currentTime = 0, nextTime = 0;
 let setInt;
 currentTime = new Date();
