@@ -227,23 +227,23 @@
 </script>-->
 
 <script>
-    var data = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg'];
+    const data = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg'];
 
     function isScroll() {
-        var docHeight = document.body.offsetHeight;
-        var windowHeight = window.innerHeight;
-        var scrollTop = document.body.scrollTop;
+        let docHeight = document.body.offsetHeight;
+        let windowHeight = window.innerHeight;
+        let scrollTop = document.body.scrollTop;
 
-        var idbox = document.getElementById('main');
-        var boxs = document.getElementsByClassName('box');
-        var lastTop = boxs[boxs.length - 1].offsetTop;
-        var lastHeight = boxs[boxs.length - 1].offsetHeight;
+        let idbox = document.getElementById('main');
+        let boxs = document.getElementsByClassName('box');
+        let lastTop = boxs[boxs.length - 1].offsetTop;
+        let lastHeight = boxs[boxs.length - 1].offsetHeight;
         if ((scrollTop + windowHeight) > (lastTop + lastHeight / 2)) {
             console.log('加载图片');
-            for (var i = 0; i < data.length - 1; i++) {
-                var box_div = document.createElement('div');
-                var pic_div = document.createElement('div');
-                var _img = document.createElement('img');
+            for (let i = 0; i < data.length - 1; i++) {
+                let box_div = document.createElement('div');
+                let pic_div = document.createElement('div');
+                let _img = document.createElement('img');
                 box_div.className = 'box';
                 pic_div.className = 'pic';
                 _img.src = 'images/' + data[i];
