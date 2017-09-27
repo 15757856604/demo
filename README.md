@@ -1,6 +1,6 @@
 ## demo
 
-_用途：个人学习记录_
+_`用途：个人学习记录`_
 
 demo链接
 -
@@ -36,4 +36,6 @@ canvas示例：
 [范围选择](https://fan-lv.github.io/demo/范围选择)
 <br/><br/>
 [静态页面](https://fan-lv.github.io/demo/静态页面)
+<br/><br/>
+[echarts demo](https://fan-lv.github.io/demo/echarts/demo)
 <br/><br/>
