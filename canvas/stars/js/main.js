@@ -1,8 +1,8 @@
 window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
     window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
-const starDensity = .216;
-const speedCoeff = .05;
+const starDensity = 0.216;
+const speedCoeff = 0.05;
 let width;
 let height;
 let starCount;
@@ -14,9 +14,24 @@ let starColor = '226,225,142';
 let cometColor = '226,225,224';
 const canva = document.getElementById('universe');
 let stars = [];
+let universe;
 
 windowResizeHandler();
 window.addEventListener('resize', windowResizeHandler, false);
+
+function windowResizeHandler() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    starCount = width * starDensity;
+    circleRadius = (width > height ? height / 2 : width / 2);
+    circleCenter = {
+        x: width / 2,
+        y: height / 2
+    };
+
+    canva.setAttribute('width', width);
+    canva.setAttribute('height', height);
+}
 
 createUniverse();
 
@@ -133,16 +148,3 @@ function getRandInterval(min, max) {
     return (Math.random() * (max - min) + min);
 }
 
-function windowResizeHandler() {
-    width = window.innerWidth;
-    height = window.innerHeight;
-    starCount = width * starDensity;
-    circleRadius = (width > height ? height / 2 : width / 2);
-    circleCenter = {
-        x: width / 2,
-        y: height / 2
-    };
-
-    canva.setAttribute('width', width);
-    canva.setAttribute('height', height);
-}
