@@ -672,3 +672,101 @@ var option7 = {
     ]
 };
 ec7.setOption(option7);
+
+<!--图表8-->
+var ec8 = echarts.init(document.getElementById('ec8'));
+var option8 = {
+    // tooltip: {
+    //     trigger: 'axis'
+    // },
+    legend: {
+        data: data8.legend
+    },
+    grid: {
+        left: '3%',
+        right: '10%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        position: 'top',
+        name: '单位：个',
+        nameTextStyle: {
+            color: '#BDBDBD',
+            fontSize: 12
+        },
+        splitLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        }
+    },
+    yAxis: {
+        type: 'category',
+        inverse: true,
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: true
+        },
+        splitLine: {
+            show: false
+        },
+        splitArea: {
+            show: false
+        },
+        data: data8.y
+    },
+    color: data8.color,
+    series: [
+        {
+            name: data8.legend[0],
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            barWidth: '40%',
+            data: data8.x1
+        },
+        {
+            name: data8.legend[1],
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            barWidth: '40%',
+            data: data8.x2
+        },
+        {
+            name: data8.legend[2],
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight',
+                    formatter: function (value) {
+                        if (value.value != 0)
+                            return value.value;
+                        else
+                            return '';
+                    }
+                }
+            },
+            barWidth: '40%',
+            data: data8.x3
+        }
+    ]
+};
+ec8.setOption(option8);
