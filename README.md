@@ -35,7 +35,7 @@ canvas示例：
 <br/><br/>
 [范围选择](https://fan-lv.github.io/demo/范围选择)
 <br/><br/>
-[静态页面](https://fan-lv.github.io/demo/静态页面)
+[静态页面](https://fan-lv.github.io/demo/静态页面/demo1)
 <br/><br/>
 [echarts demo](https://fan-lv.github.io/demo/echarts/demo)
 <br/><br/>
