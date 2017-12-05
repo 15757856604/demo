@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul class="top-tab">
+    <li class="top-item">
+        <i class="icon"></i>
+        <div class="text">
+            <div class="title">污染源数据</div>
+            <div class="bottom-content">
+                <!--<span class="detail">详情>></span>-->
+                <span class="num" title="35686">35686</span>
+            </div>
+        </div>
+    </li>
+    <li class="top-item">
+        <i class="icon"></i>
+        <div class="text">
+            <div class="title">改建项目验收数量</div>
+            <div class="bottom-content">
+                <!--<span class="detail">详情>></span>-->
+                <span class="num" title="113">113</span>
+            </div>
+        </div>
+    </li>
+    <li class="top-item">
+        <i class="icon"></i>
+        <div class="text">
+            <div class="title">环境影响评价数量</div>
+            <div class="bottom-content">
+                <!--<span class="detail">详情>></span>-->
+                <span class="num" title="1590">1590</span>
+            </div>
+        </div>
+    </li>
+    <li class="top-item">
+        <i class="icon"></i>
+        <div class="text">
+            <div class="title">行政处罚数量</div>
+            <div class="bottom-content">
+                <!--<span class="detail">详情>></span>-->
+                <span class="num" title="35686">35686</span>
+            </div>
+        </div>
+    </li>
+    <li class="top-item">
+        <i class="icon"></i>
+        <div class="text">
+            <div class="title">收费金额</div>
+            <div class="bottom-content">
+                <!--<span class="detail">详情>></span>-->
+                <span class="num" title="15064000.0">15064000.0</span>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="content" id="content">
+    <div class="content-left">
+        <div class="content-item left-top">
+            <div class="content-title open-dialog" data-id="建设项目数据">
+                建设项目数据
+                <span class="content-title-right">(2014-08-12至2015-08-12)</span>
+            </div>
+            <div class="content-echarts" id="construction-project"></div>
+        </div>
+        <div class="content-item content-item2 left-bottom">
+            <div class="content-title open-dialog" data-id="机动车尾气数据">
+                机动车尾气数据
+            </div>
+            <div class="content-tab">
+                <ul class="tab-items">
+                    <li class="tab-item selected">水质级别构成</li>
+                    <li class="tab-item">超标污染物</li>
+                </ul>
+            </div>
+            <div class="content-echarts content-echarts-hastitle" id="car-offgas"></div>
+        </div>
+    </div>
+    <div class="content-middle">
+        <div class="content-item">
+            <div class="content-title">
+                实时空气质量报警地图（2017-12-01 12时）
+                <span class="content-title-right">统计分析</span>
+            </div>
+            <div id="map" class="content-echarts"></div>
+        </div>
+        <div class="content-item content-item2">
+            <div class="content-title">
+                行政处罚统计图
+            </div>
+            <div class="content-tab">
+                检查时间
+                <input class="" style="background: none;">
+            </div>
+            <div id="administrative-penalty" class="content-echarts content-echarts-hastitle"></div>
+        </div>
+    </div>
+    <div class="content-right">
+        <div class="content-item right-top">
+            <div class="content-title open-dialog" data-id="排污费征收统计">
+                排污费征收统计
+            </div>
+            <div class="content-echarts" id="pollution-discharge-fee"></div>
+        </div>
+        <div class="content-item content-item2 right-bottom">
+            <div class="content-title open-dialog" data-id="排污许可发证放统计">
+                排污许可发证放统计
+            </div>
+            <div class="content-echarts" id="permit-issuing-permits"></div>
+        </div>
+    </div>
+</div>
+
+<div class="dialog-box">
+    <div class="dialog-content">
+        <div class="dialog-title">更换模块</div>
+        <ul class="dialog-items">
+            <li class="dialog-item">建设项目数据</li>
+            <li class="dialog-item">机动车尾气数据</li>
+            <li class="dialog-item">排污费征收统计</li>
+            <li class="dialog-item">排污许可发证放统计</li>
+            <li class="dialog-item">企业信用数据</li>
+            <li class="dialog-item">环境信访数据</li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/lib/jquery-3.1.1.min.js"></script>
+<script src="js/lib/echarts.min.js"></script>
+<script src="js/lib/xinjiang.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

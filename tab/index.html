@@ -5,17 +5,20 @@
     <title>Title</title>
 
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
         }
-        body{
+
+        body {
             margin: 16px;
         }
-        .tab-ul{
+
+        .tab-ul {
             height: 28px;
         }
-        .tab-li{
+
+        .tab-li {
             height: 28px;
             line-height: 28px;
             text-align: center;
@@ -26,22 +29,33 @@
             cursor: pointer;
             padding: 0 12px;
         }
-        .tab-li:last-child{
+
+        .tab-li:last-child {
             border-right: 1px solid #ddd;
         }
-        .tab-li:hover{
+
+        .tab-li:hover {
             background: #ddd;
             color: #fff;
         }
     </style>
 </head>
 <body>
-    <ul class="tab-ul">
-        <li class="tab-li">demo</li>
-        <li class="tab-li">demo</li>
-        <li class="tab-li">demo</li>
-        <li class="tab-li">demo</li>
-        <li class="tab-li">demo</li>
-    </ul>
+<ul class="tab-ul">
+
+</ul>
+
+<script src="竖状tab/jquery-3.1.1.min.js"></script>
+<script>
+    var data = ['demo1', 'demo2', 'demo3', 'demo4'];
+    function eachData() {
+        var html = '';
+        for (var i = 0, len = data.length; i < len; i++) {
+            html += '<li class="tab-li">' + data[i] + '</li>';
+        }
+        $('.tab-ul').html(html);
+    }
+    eachData();
+</script>
 </body>
 </html>

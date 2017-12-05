@@ -94,17 +94,42 @@
 
     var a = '1';
     var b = '1';
-    var c = {"aaa":a===b};
+    var c = {"aaa": a === b};
     console.log(c);
 
-    var array1 = [1,2,3,4,5,6];
-    function run(){
-        for(let i = 0 ;i<array1.length;i++){
+    var array1 = [1, 2, 3, 4, 5, 6];
+    function run() {
+        for (let i = 0; i < array1.length; i++) {
             console.log(i);
 //            return i;
         }
     }
     run();
+
+
+    var application = function () {
+
+        //私有变量和函数
+        var components = new Array();
+
+        //初始化
+        components.push(new BaseComponent());
+
+        //公共
+        return {
+            getComponentCount: function () {
+                return components.length;
+            },
+
+            registerComponent: function () {
+                if (typeof component == "object") {
+                    components.push(component);
+                }
+            }
+        }
+    };
+    var appLength = application.getComponentCount();
+    console.log(appLength);
 
 </script>
 </body>

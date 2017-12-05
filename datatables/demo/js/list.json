@@ -1,0 +1,1070 @@
+{
+    "detailList": [
+        {
+            "id": "000184a34567bc1a014124c9243432cc",
+            "name": "水温",
+            "unit": "℃",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": null,
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "id": "000284a34567bc1a014124c9243432cc",
+            "name": "PH",
+            "unit": "无量纲",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": "5.36484",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": "7.429247",
+                    "isStandard": "1"
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": "7.49051",
+                    "isStandard": "1"
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": "7.108429",
+                    "isStandard": "1"
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": "5.477981",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": "5.266946",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": "6.487555",
+                    "isStandard": "1"
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": "7.74147",
+                    "isStandard": "1"
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": "6.64214",
+                    "isStandard": "1"
+                }
+            ]
+        },
+        {
+            "id": "000384a34567bc1a014124c9243432cc",
+            "name": "溶解氧",
+            "unit": "mg/L",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": "4.76397",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": "9.336978",
+                    "isStandard": "1"
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": "2.237404",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": "7.250716",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": "1.579874",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": "6.879688",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": "5.099623",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": "4.333002",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": "3.563603",
+                    "isStandard": "0"
+                }
+            ]
+        },
+        {
+            "id": "000484a34567bc1a014124c9243432cc",
+            "name": "电导率",
+            "unit": "μS/cm",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": null,
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "id": "000584a34567bc1a014124c9243432cc",
+            "name": "浊度",
+            "unit": "km",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": null,
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "id": "000684a34567bc1a014124c9243432cc",
+            "name": "氨氮",
+            "unit": "mg/L",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": "1.791615",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": "1.709813",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": "0.822501",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": "1.731038",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": "1.224998",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": "1.379201",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": "1.65965",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": "1.013557",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": "0.823534",
+                    "isStandard": "0"
+                }
+            ]
+        },
+        {
+            "id": "000784a34567bc1a014124c9243432cc",
+            "name": "高锰酸盐指数",
+            "unit": "mg/L",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": "8.621192",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": "11.357806",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": "10.700531",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": "8.641894",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": "9.596297",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": "6.774265",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": "11.963153",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": "8.322916",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": "9.003964",
+                    "isStandard": "0"
+                }
+            ]
+        },
+        {
+            "id": "000884a34567bc1a014124c9243432cc",
+            "name": "总磷",
+            "unit": "mg/L",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": "0.250716",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": "0.241517",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": "0.376061",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": "0.327007",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": "0.303037",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": "0.107078",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": "0.375562",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": "0.204164",
+                    "isStandard": "0"
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": "0.138286",
+                    "isStandard": "0"
+                }
+            ]
+        },
+        {
+            "id": "001084a34567bc1a014124c9243432cc",
+            "name": "总氮",
+            "unit": "mg/l",
+            "flag": null,
+            "factorValues": [
+                {
+                    "time": "2017-08-12 22",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 21",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 20",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 19",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 18",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 13",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 12",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 10",
+                    "value": null,
+                    "isStandard": null
+                },
+                {
+                    "time": "2017-08-12 09",
+                    "value": null,
+                    "isStandard": null
+                }
+            ]
+        }
+    ],
+    "titles": [
+        {
+            "id": "000184a34567bc1a014124c9243432cc",
+            "name": "水温",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000284a34567bc1a014124c9243432cc",
+            "name": "PH",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000384a34567bc1a014124c9243432cc",
+            "name": "溶解氧",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000484a34567bc1a014124c9243432cc",
+            "name": "电导率",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000584a34567bc1a014124c9243432cc",
+            "name": "浊度",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000684a34567bc1a014124c9243432cc",
+            "name": "氨氮",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000784a34567bc1a014124c9243432cc",
+            "name": "高锰酸盐指数",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "000884a34567bc1a014124c9243432cc",
+            "name": "总磷",
+            "value": null,
+            "isStandard": null
+        },
+        {
+            "id": "001084a34567bc1a014124c9243432cc",
+            "name": "总氮",
+            "value": null,
+            "isStandard": null
+        }
+    ],
+    "table": [
+        {
+            "time": "2017-08-12 22",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "5.36484",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "4.76397",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.791615",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "8.621192",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.250716",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 21",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "7.429247",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "9.336978",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.709813",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "11.357806",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.241517",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 20",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "7.49051",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "2.237404",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "0.822501",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "10.700531",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.376061",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 19",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "7.108429",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "7.250716",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.731038",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "8.641894",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.327007",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 18",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "5.477981",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "1.579874",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.224998",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "9.596297",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.303037",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 13",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "5.266946",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "6.879688",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.379201",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "6.774265",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.107078",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 12",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "6.487555",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "5.099623",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.65965",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "11.963153",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.375562",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 10",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "7.74147",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "4.333002",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "1.013557",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "8.322916",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.204164",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        },
+        {
+            "time": "2017-08-12 09",
+            "valueList": [
+                {
+                    "id": "000184a34567bc1a014124c9243432cc",
+                    "name": "水温",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000284a34567bc1a014124c9243432cc",
+                    "name": "PH",
+                    "value": "6.64214",
+                    "isStandard": "1"
+                },
+                {
+                    "id": "000384a34567bc1a014124c9243432cc",
+                    "name": "溶解氧",
+                    "value": "3.563603",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000484a34567bc1a014124c9243432cc",
+                    "name": "电导率",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000584a34567bc1a014124c9243432cc",
+                    "name": "浊度",
+                    "value": "--",
+                    "isStandard": null
+                },
+                {
+                    "id": "000684a34567bc1a014124c9243432cc",
+                    "name": "氨氮",
+                    "value": "0.823534",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000784a34567bc1a014124c9243432cc",
+                    "name": "高锰酸盐指数",
+                    "value": "9.003964",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "000884a34567bc1a014124c9243432cc",
+                    "name": "总磷",
+                    "value": "0.138286",
+                    "isStandard": "0"
+                },
+                {
+                    "id": "001084a34567bc1a014124c9243432cc",
+                    "name": "总氮",
+                    "value": "--",
+                    "isStandard": null
+                }
+            ]
+        }
+    ]
+}

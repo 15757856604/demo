@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id":"0",
+            "treeIndex":"0",
+            "class":"folder",
+            "name": "0"
+        },
+        {
+            "id": "0-0",
+            "treeIndex":"0-0",
+            "class":"folder",
+            "name": "0-0"
+        },
+        {
+            "id": "0-0-0",
+            "treeIndex":"0-0-0",
+            "class":"folder",
+            "name": "0-0-0"
+        },
+        {
+            "id": "0-0-1",
+            "treeIndex":"0-0-1",
+            "class":"folder",
+            "name": "0-0-1"
+        },
+        {
+            "id": "0-1",
+            "treeIndex":"0-1",
+            "class":"folder",
+            "name": "0-1"
+        },
+        {
+            "id": "0-2",
+            "treeIndex":"0-2",
+            "class":"folder",
+            "name": "0-2"
+        },
+        {
+            "id": "0-3",
+            "treeIndex":"0-3",
+            "class":"folder",
+            "name": "0-3"
+        }
+    ]
+}
